@@ -78,7 +78,7 @@
 //***10**
 // За допомогою циклу  “for…in” вивести в консоль ключі і значення об*єкта
 
-// for (key in user) {
+// for (let key in user) {
 //     console.log(key);
 //     console.log(user[key]);
 // }
