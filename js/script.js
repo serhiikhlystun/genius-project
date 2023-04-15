@@ -78,17 +78,15 @@
 //Зробіть сервіс який отримує тризначне число
 //Поверніть користувачу сумму цих чисел
 
-// let number = prompt('Введіть тризначне число');
-// let checkNumber = Number(number);
-// let sum = 0;
+let number = prompt('Введіть тризначне число');
+let summ = 0;
 
-// if (Number.isNaN(checkNumber)) {
-//     alert('Введене значення не число!');
-// } else if (number.length < 3) {
-//     alert('Число має бути тризначним.');
-// } else {
-//     for (element in number) {
-//         sum += Number(number[element]);
-//     }
-//     console.log(sum);
-// }
+
+if (Number.isNaN(Number(number))) {
+    alert('Введене значення не число!');
+} else if (number.length != 3 || number[0] == 0) {
+    alert('Число має бути тризначним.');
+} else {
+    summ = Number(number[0]) + Number(number[1]) + Number(number[2]);
+    console.log(summ);
+}
